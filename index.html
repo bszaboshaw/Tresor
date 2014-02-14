@@ -14,13 +14,13 @@
 
 	<link href="css/framework.css" rel="stylesheet">
   	<link href="css/framework-theme.css" rel="stylesheet">
-  	<link href="css/test_for_columns.css" rel="stylesheet">
   	
-  	<link href="css/animations.css" rel="stylesheet">
   	<link href="css/custom-icons-embedded.css" rel="stylesheet">
   	<link href="css/custom-icons-ie7-codes.css" rel="stylesheet">
   	<link href="css/custom-icons-ie7.css" rel="stylesheet">
   	<link href="css/custom-icons.css" rel="stylesheet">
+
+  	<link href="css/animate.min.css" rel="stylesheet">
 
   	<link href="css/main.css" rel="stylesheet">
 
@@ -57,7 +57,7 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
-					<li ><a href="#">Work</a></li>
+					<li class><a href="#">Work</a></li>
 					<li><a href="#">About</a></li>
 					<li><a href="#">Blog &amp; News</a></li>
 					<li class="nav-icon"><a href="http://www.tresordesignshop.com" target="_blank"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
@@ -74,88 +74,98 @@
 	.container - wrapper for all the rows
 	.row - contains all column classes 
 	.col-##-## - the sizes of columns in rows  -->
+
   <div class="container">
-  	<!-- <div id="one-true"> -->
 		<div class="row">
-				<div class="col-md-6 col-sm-6 col-xs-12">
-					<div id="profile">
-						<p class="caps-top">PROFILE</p>
-						<p class="profile-text">Tr&eacute;sor is the studio of digital creative Bettina Szabo-Shaw. I am part technologist, part designer specialising in Interactive- and User Experience Design as well as Front-end development.</p>
-						<p class="profile-text">I work either directly with clients, often by putting a team of experts together or collaborate with design studios.</p>
-						<a href="#"><p class="caps-bottom">READ MORE</p>
-					</div> <!-- END #profile -->
-				</div> <!-- END .6column -->
+			<div class="col-md-6 col-sm-6 col-xs-12">
+				<div id="profile">
+					<p class="caps-top">PROFILE</p>
+					<p class="profile-text">Tr&eacute;sor is the studio of digital creative Bettina Szabo-Shaw. I am part technologist, part designer specialising in Interactive- and User Experience Design as well as Front-end development.</p>
+					<p class="profile-text">I work either directly with clients, often by putting a team of experts together or collaborate with design studios.</p>
+					<a href="#"><p class="caps-bottom">READ MORE</p>
+				</div> <!-- END #profile -->
+			</div> <!-- END .6column -->
 
-				<div class="col-md-6 col-sm-6 col-xs-12">
-						<div class="feature-wrapper">
-							<ul class="rslides">
-  								<li><img src="images/CM_website.jpg" alt=""></li>
-							  	<li><img src="images/FF_website_LaptopBackground.jpg" alt=""></li>
-							  	<li><img src="images/CM_website.jpg" alt=""></li>
-							  	<li><img src="images/FF_Website_LaptopBackground.jpg" alt=""></li>
-							</ul>
-							<p class="framed-caption">
-								<span class="type-of">Featured Project</span><br/>
-								<span class="project">Website and Identity Design for Lifestyle &amp; Interior Stylist</span>
-							</p>
-						</div> <!-- END .feature-wrapper -->
-					
-					</div> <!-- END row -->
-				<!-- </div>  --><!-- END #one-true-->
-			</div> <!-- END .6column  -->
+			<div class="col-md-6 col-sm-6 col-xs-12">
+				<div class="feature-wrapper">
+					<ul class="rslides">
+  						<li><img src="images/CM_website.jpg" alt=""></li>
+						<li><img src="images/FF_Website_LaptopBackground.jpg" alt=""></li>
+						<li><img src="images/CM_website.jpg" alt=""></li>
+						<li><img src="images/FF_Website_LaptopBackground.jpg" alt=""></li>
+					</ul>
+					<p class="framed-caption">
+						<span class="type-of">Featured Project</span><br/>
+						<span class="project">Website and Identity Design for Lifestyle &amp; Interior Stylist</span>
+					</p>
+				</div> <!-- END .feature-wrapper -->
+			</div> <!-- END .6column  -->		
+		</div> <!-- END .row -->
 
-	
+		<div class="row">
+            <div class="col-sm-4 col-md-4 col-xs-12 animated" data-animation="fadeInLeft">
+                <h3>Identity &amp; Website for Flashforward</h3>
+                <p>Custom logo and website design for Claire Morgan - one of the leading interior stylists in the UK. The aim was to bring her distinctive philosophy and style to the online presence.</p>
+                <p>Identity was implemented across printed and digital media.</p>
+                <a href="#" class="button">Learn more <span class="icon-arrow-right7"></span></a>
+            </div> <!-- END .col-sm-5 offset by 1  -->
+
+            <div class="col-sm-8 col-md-8 col-xs-12 animated text-center" data-animation="fadeInRight">
+                <img src="images/FF_website_cutout_565x445.jpg" width="565" height="445" alt=" ">
+            </div> <!-- END .col-sm-5 offset by 1 -->
+        </div> <!-- END .row -->
+
+        <!-- START SECTION SPLIT -->
+        <div class="section-split">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 animated" data-animation="fadeInRight">
+                    <img src="images/CF_website_cutout_565x445.jpg" width="565" height="445" alt="">
+            	</div> <!-- end row col sm 6 offset by one-->
+
+            	<div class="col-sm-4 col-md-4 animated" data-animation="fadeInLeft">
+                	<h3>Website for Architecture Practice Canaway Fleming</h3>
+                    <p>Website design and build for Canaway Fleming Architects. The practice was established in 2004 and after a very successful few years they wanted to update their online identity. We kept the interface clean and simple to enhance their portfolio. The site aims to highlight their concept driven working process and to illustrate their ability to successfully deliver projects from unique private residences to complex large-scale infrastructure projects.</p>
+                    <p>The site is fully responsive and we also implemented a robust Content Management System.</p>
+                    <a href="#" class="button">Learn more <span class="icon-arrow-right7"></span></a>
+                </div> <!-- end .row col sm 4 offset by 1  -->
+            </div> <!-- end .row -->
+        </div><!-- END SECTION SPLIT -->
 
 		<div class="row">
 			<div class="col-sm-4 col-md-4 col-xs-12">
 				<img class="img-responsive" src="images/FF_Website_LaptopBackground.jpg" alt="">
-      			<p class="framed-caption">Featured Project #1</p>
+      			<p class="framed-caption">Tresor Shop #1</p>
 			</div> <!-- END .col-sm-6 .col-xs-12 -->
 
 			<div class="col-sm-4 col-md-4 col-xs-12">
 				<img class="img-responsive" src="images/FF_Website_LaptopBackground.jpg" alt="">
-				<p class="framed-caption">Featured Project #2</p>
+				<p class="framed-caption">Tresor Shop #2</p>
 			</div>
 
-			<div class="col-sm-4 col-md-4 col-xs-12">
+			<div class="col-sm-4 col-md-4 col-xs-12 text-center">
 				<img class="img-responsive" src="images/FF_Website_LaptopBackground.jpg" alt="">
-				<p class="framed-caption">Featured Project #3</p>
+				<p class="framed-caption">Blog Entry Feature #3</p>
 			</div>
+		</div> <!-- END .row -->
 
-		</div> <!-- END row -->
+		<hr class="featurette-divider">
 
-		<div class="row">
-                    <div class="col-sm-4 col-sm-offset-1 animated" data-animation="fadeInLeft">
-                        <h3>Identity &amp; Website Design for Interior Stylist</h3>
-                        <p>Custom logo and website design for Claire Morgan - one of the leading interior stylists in the UK. The aim was to bring her distinctive philosophy and style to the online presence whilst letting the work flourish.</p>
-                        <p>Identity was implemented across printed and digital media.</p>
-                        <a href="#" class="button">Learn more <span class="icon-arrow-right7"></span></a>
-                    </div>
-                    <div class="col-sm-6 col-sm-offset-1 animated" data-animation="fadeInRight">
-                        <img src="images/FF_website_cutout_565x445.jpg" width="565" height="445" alt=" ">
-                    </div>
-                </div>
-            </div>
+	  	<div class="featurette">
+	    	<!-- <img class="featurette-image img-circle pull-right" src="http://placehold.it/512"> -->
+	    	<img class="featurette-image img-circle pull-right" src="images/CF_website_cutout_565x445.jpg">
+	    	<h2 class="featurette-heading">Flashforward. <span class="text-muted">Identity &amp; Website.</span></h2>
+	    	<p class="lead">Website design and build for Canaway Fleming Architects. The practice was established in 2004 and after a very successful few years they wanted to update their online identity. We kept the interface clean and simple to enhance their portfolio. </p>
+	  	</div>
 
-            <!-- START SECTION SPLIT -->
-            <div class="section-split">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6 col-sm-offset-1 animated" data-animation="fadeInRight">
-                            <img src="images/CF_website_cutout_565x445.jpg" width="565" height="445" alt="">
-                        </div>
-                        <div class="col-sm-4 col-sm-offset-1 animated" data-animation="fadeInLeft">
-                           <h3>Website for Architecture Practice Canaway Fleming</h3>
-                        	<p>Website design and build for Canaway Fleming Architects. The practice was established in 2004 and after a very successful few years they wanted to update their online identity. We kept the interface clean and simple to enhance their portfolio. The site aims to highlight their concept driven working process and to illustrate their ability to successfully deliver projects from unique private residences to complex large-scale infrastructure projects.</p>
-                        	<p>The site is fully responsive and we also implemented a robust Content Management System.</p>
-                            <a href="#" class="button">Learn more <span class="icon-arrow-right7"></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- END SECTION SPLIT -->
-</div>
-	<!-- </div>  --><!-- END container  -->
+	  	<hr class="featurette-divider">
+
+	  	<div class="featurette">
+	    	<img class="featurette-image img-circle pull-left" src="images/CF_website_cutout_565x445.jpg">
+	    	<h2 class="featurette-heading">Canaway Fleming <span class="text-muted">Website for Architecture Practice</span></h2>
+	    	<p class="lead">Website design and build for Canaway Fleming Architects. The practice was established in 2004 and after a very successful few years they wanted to update their online identity. We kept the interface clean and simple to enhance their portfolio. </p>
+	  	</div>
+
+</div> <!-- END main .container -->
 
 <footer>
 	<section id="footerWrapper">
