@@ -133,10 +133,11 @@ ul.navbar-right li:last-child(4) {
   font-size: 1.1em;
   line-height: 1.8em;
   text-align: center;
-  border-left: 4px solid rgb(43, 32, 26);
+ /* border-left: 3px solid rgb(43, 32, 26);
+  border-right: 3px solid rgb(43, 32, 26);
   border-top: 1px solid rgb(43, 32, 26);
-  border-right: 1px solid rgb(43, 32, 26);
-  border-bottom: 1px solid rgb(43, 32, 26);
+  border-bottom: 1px solid rgb(43, 32, 26);*/
+  border: 3px solid #111;
   padding-left: 60px;
   padding-right: 60px;
   display: block;
@@ -149,7 +150,7 @@ ul.navbar-right li:last-child(4) {
 .caps-top {
     font-family: "AvenirLTStd-Light", sans-serif;
     text-decoration: underline;
-    text-transform: capitalize;
+    text-transform: uppercase;
     text-align: center;
     font-size: 0.85em;
     padding-bottom: 30px;
@@ -158,7 +159,7 @@ ul.navbar-right li:last-child(4) {
 .caps-bottom {
     font-family: "AvenirLTStd-Light", sans-serif;
     text-decoration: underline;
-    text-transform: capitalize;
+    text-transform: uppercase;
     text-align: center;
     font-size: 0.85em;
     padding-top: 30px;
@@ -240,27 +241,29 @@ ul.navbar-right li:last-child(4) {
   }
 
 .framed-caption {
-    margin-top: 15px;
+    margin-top: 12px;
     padding: 15px;
     color: #111;
-    border-left: 4px solid rgb(43, 32, 26);
+    /*border-left: 1px solid rgb(43, 32, 26);
     border-top: 1px solid rgb(43, 32, 26);
-    border-right: 1px solid rgb(43, 32, 26);
-    border-bottom: 1px solid rgb(43, 32, 26);
+    border-right: 1px solid rgb(43, 32, 26);*/
+    border-bottom: 3px solid #111;
+    text-align: center;
 }
 .type-of { 
     color: #111;
     font-family: "AvenirLTStd-Light", sans-serif;
-    font-size: 11px;
-    line-height: 10px;
+    font-size: 0.9em;
+    line-height: 1.2em;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .project {
     color: #111;
     font-size: 14px;
     font-family: "AvenirLTStd-Light", sans-serif;
-    line-height: 16px;
+    line-height: 18px;
 }
 
 .category-icon {
@@ -277,7 +280,7 @@ a:hover img {
     opacity: 0.9;
 }
 
-/* colours for TESTing columns */
+/* colours for TESTING columns - TEMP! */
 
 .darkBG {
   background-color: #999;
@@ -308,11 +311,9 @@ a:hover img {
         display: inline-block;
     }
 
-
-
 /* Section Split */
 .section-split {
-    background-color: #f8f8f8;
+    background-color: #bbb;
     padding: 40px 0;
     margin: 70px 0;
 
@@ -363,13 +364,73 @@ a:hover img {
     background-image: url("http://placehold.it/1400x800");
 }
 
-/*Bootstrap 3 Carousel Layout on Bootply */
+/* Buttons */
+.button,
+.button,
+button,
+input[type="button"] {
+    -webkit-appearance: none;
+    display: inline-block;
+    font-size: 10px;
+    color: #111;
+    line-height: normal;
+    /*border-color: #111;*/
+    border: 1px solid #bbb;
+    padding: 10px 13px 10px 14px;
+    cursor: pointer;
+    margin: 0 5px 10px 0;
+
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    -ms-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+}
+
+.button [class*="icon-"]:before {
+    position: relative;
+    top: 1px;
+    margin-left: 3px;
+}
+
+/* Lime button */
+.button.black {
+    background-color: #111;
+    border: 1px solid #111;
+}
+
+.button.lime:hover {
+    background-color: #bbb;
+}
+
+.button:hover,
+button:hover,
+input[type="button"]:hover {
+    color: #bbb;
+}
+
+.glyphicon-chevron-right:before {
+  content: "\e080";
+  color: red;
+}
+
+.feature-heading {
+  padding-top: 80px;
+  font-family: "AvenirLTStd-Light", sans-serif;
+  font-size: 35px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+/*Bootstrap 3 - Carousel Layout on BOOTPLY */
 
 /* Featurettes
 ------------------------- */
 
 .featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+  margin: 50px 0; /* Space out the Bootstrap <hr> more */
+  border-top: 3px solid #111;
 }
 .featurette {
   padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
@@ -390,12 +451,17 @@ a:hover img {
 /* Thin out the marketing headings */
 .featurette-heading {
   font-family: "AvenirLTStd-Light", sans-serif;
-  font-size: 50px;
+  font-size: 35px;
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
 }
 
+.lead { 
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1.4em;
+}
 
 /********************************/
 /* Footer */
@@ -563,8 +629,8 @@ ul.socialNetwork li:first-child {
   padding: 0 15px;
   border-left-width: 1px;
   border-left-style: solid;
-  border-left-color: #fff;
-  color: #fff;
+  border-left-color: #bbb;
+  color: #bbb;
 }
 
 #footer-bottom li:first-child a {
@@ -578,8 +644,59 @@ ul.socialNetwork li:first-child {
 }
 
 #footer-bottom a { 
-  color: #fff; 
+  color: #bbb; 
 }
 
 #footer-bottom a:hover { 
-  color: #bbb; }
+  color: #fff; }
+
+/********************************/
+/* BLOG */
+/******************************/
+
+.js.csstransitions #top,
+.js.csstransitions #side,
+.js.csstransitions #main {
+    opacity: 0;
+
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    -ms-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+}
+
+.js.csstransitions .loaded #top,
+.js.csstransitions .loaded #side,
+.js.csstransitions .loaded #main {
+    opacity: 1;
+}
+
+.page-content .section-split a img {
+    background: #f8f8f8;
+}
+
+.page-content .section-split.tinted a img {
+    background: #e1f1ef;
+}
+
+.blog-full .article-title {
+    margin: 0 0 5px 0;
+}
+
+.blog-full .article-post {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.blog-full .pagination {
+    margin-top: 50px;
+    padding-top: 50px;
+    border-top: 1px dotted #eee;
+}
+
+
+
+
