@@ -13,7 +13,6 @@ Author: Bettina Szabo-Shaw
 	clear: both;
 }
 
-
 body {
     padding-top: 70px;
      color: #111;
@@ -21,6 +20,11 @@ body {
      line-height: 1.4;
      font-family: "AvenirLTStd-Light", sans-serif;
      background-color: #fff;
+}
+
+.navbar {
+  opacity: .9;
+  z-index: 9997;
 }
 
 @font-face {
@@ -120,8 +124,8 @@ ul.navbar-right li:last-child(4) {
 /*Drop down nav background WHITE on mobile! */
 @media (max-width: 768px) {
   .navbar-collapse {
-    /*background-color: #fafafa;*/
-    /*border-bottom: 1px solid #bbb;*/
+    background-color: #fafafa;
+    border-bottom: 1px solid #bbb;
   }
 }
 
@@ -130,80 +134,61 @@ ul.navbar-right li:last-child(4) {
 .profile-feature { 
   background: #e9e9e9;
   padding: 30px;
+  height: 460px;
 }
 
-.profile-heading {
+/*.profile-heading {
   color: #111;
   font-family: "AvenirLTStd-Light", sans-serif;
   font-size: 0.9em;
   line-height: 1.2em;
   text-transform: uppercase;
   text-align: left;
-}
+}*/
 
-.profile-text {
-  font-family: "AvenirLTStd-Light", sans-serif;
-  color: #111;
-  font-size: 1.5em;
-  line-height: 1.2em;
-  text-align: left;
-  display: block;
-}
-
-
-/*PROFILE - larger than 992 px & smaller than 1190px*/
+/*PROFILE - larger than 992 px & smaller than 1199px*/
 @media (min-width: 992px) and (max-width: 1199px) { 
-  #profile {
-    height: 388px;
-    padding-top: 12%;
+  .profile-feature {
+    height: 279px;
+    padding: 30px;
   }
 }
 
-/*PROFLE - smaller than 992 px & larger than 768px*/
-@media (min-width: 768px) and (max-width: 991px) { 
-  #profile {
-    height: 330px;
-    padding-top: 11%;
-    font-size: 0.9em;
-  }
-  .caps-top {
-    padding-bottom: 15px;
-}
-  .caps-bottom {
-    padding-top: 15px;
-}
-
-/*full width profile and slider */
-.profile-feature { 
-  background: #e9e9e9;
-  padding: 30px;
-  margin-bottom: 30px;
-}
-
-}
-
-/*PROFLE - smaller than 768px / larger than 320px*/
-@media (max-width: 768px) and (min-width: 320px) { 
-  #profile {
-    height: 330px;
-    padding-top: 11%;
-    font-size: 0.8em;
+@media (max-width: 991px) { 
+  .profile-feature {
+    height: auto;
+    padding: 30px;
     margin-bottom: 30px;
   }
-  .caps-top {
-    padding-bottom: 5%;
-}
-  .caps-bottom {
-    padding-top: 5%;
-}
-/*full width profile and slider */
-.profile-feature { 
-  background: #e9e9e9;
-  padding: 30px;
-  margin-bottom: 30px;
 }
 
+/*See also Buttons below */
+
+.button-profile {
+    margin-top: 30px;
 }
+
+/*DELETE AFTER TESTING !!!!
+UNDER 992 one column only for TOP section */
+
+/*PROFLE - smaller than 992 px & larger than 768px*/
+/*@media (min-width: 768px) and (max-width: 991px) { 
+  .profile-feature {
+    height: auto;
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+}*/
+
+/*PROFLE - smaller than 768px / larger than 320px*/
+/*@media (max-width: 768px) and (min-width: 320px) { 
+
+  .profile-feature { 
+    background: #e9e9e9;
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+}*/
 
 /********************************/
 /*Responsive Slide - Top Right */
@@ -241,7 +226,8 @@ ul.navbar-right li:last-child(4) {
   border: 0;
   }
 
-.framed-caption {
+/*may need to delete this - using .lead under Slider instead for consistency*/
+/*.framed-caption {
     margin-top: 12px;
     padding-top: 15px;
     color: white;
@@ -258,7 +244,6 @@ ul.navbar-right li:last-child(4) {
     text-align: left;
 }
 
-/*may need to delete this - using .lead under Slider instead for consistency*/
 .feature-project-title {
     color: #111;
     font-size: 14px;
@@ -275,7 +260,7 @@ ul.navbar-right li:last-child(4) {
     margin: 5px;
     text-transform: uppercase;
 }
-
+*/
 .row-divider {
     margin-top: 0;
 }
@@ -298,7 +283,10 @@ a:hover img {
   background-color: #333;
 }
 
+/********************************/
 /* Animation */
+/******************************/
+
 .csstransitions .animated {
   visibility: hidden;
 }
@@ -315,7 +303,10 @@ a:hover img {
    display: inline-block;
 }
 
+/********************************/
 /* Buttons */
+/******************************/
+
 .button,
 .button,
 button,
@@ -346,14 +337,14 @@ input[type="button"] {
     margin-left: 3px;
 }
 
-/* Lime button */
-.button.black {
+.button {
     background-color: #111;
-    border: 1px solid #111;
+   
 }
 
-.button.lime:hover {
-    background-color: #bbb;
+.button:hover {
+  /*  border: 3px solid #111;*/
+    color: #bbb;
 }
 
 .button:hover,
@@ -362,17 +353,30 @@ input[type="button"]:hover {
     color: #bbb;
 }
 
+/*MAIN Headings on HOME PAGE*/
+
 .feature-heading {
   padding-top: 80px;
   font-family: "AvenirLTStd-Light", sans-serif;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 300;
-  line-height: 1;
+  line-height: 1.2em;
+  letter-spacing: -1px;
+}
+/* TRESOR SHOP Heading on HOME PAGE */
+.featurette-heading {
+  padding-top: 150px;
+  font-family: "AvenirLTStd-Light", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1.2em;
   letter-spacing: -1px;
 }
 
-.button-profile {
-    margin-top: 30px;
+.lead { 
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1.4em;
 }
 
 /*Bootstrap 3 - Carousel Layout on BOOTPLY */
@@ -387,6 +391,64 @@ input[type="button"]:hover {
 .feature-img-right {
   margin-left: 20px;
 }
+
+@media (min-width: 992px) and (max-width: 1199px) { 
+  .feature-img-left {
+  margin-left: -27px;
+  }
+  .feature-img-right {
+  margin-left: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .feature-img-left {
+    margin-left: -21px;
+  }
+
+  .feature-img-right {
+    margin-left: 12px;
+  }
+}
+
+/*Under 768 - col-xs-12 - for iPad MINI - HOME PAGE content centered*/
+@media (max-width: 768px) {
+   .feature-img-left {
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: center;
+  }
+
+    .feature-img-right {
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: center;
+    margin-top: 25px;
+  }
+
+  .feature-heading {
+    text-align: center;
+  }
+
+  .lead {
+    text-align: center;
+  }
+
+/*  Tresor Shop Text */
+  h2.featurette-heading {
+    padding-top: 0px;
+    text-align: center;
+  }
+
+  .button { 
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: center;
+    display: block;
+    text-align: center;
+  }
+}
+/*************************/
 
 .featurette-divider {
   margin: 50px 0; /* Space out the Bootstrap <hr> more */
@@ -403,6 +465,7 @@ input[type="button"]:hover {
   border-top: 3px solid #111;
 }
 
+/*POSSIBLY DELETE down to Flexslider - NOT USED AT THE MOMENT*/
 .featurette {
   padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
   overflow: hidden; /* Vertically center images part 2: clear their floats. */
@@ -419,21 +482,6 @@ input[type="button"]:hover {
   margin-left: 40px;
 }
 
-/* Thin out the marketing headings */
-.featurette-heading {
-  padding-top: 150px;
-  font-family: "AvenirLTStd-Light", sans-serif;
-  font-size: 35px;
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
-}
-
-.lead { 
-  font-size: 1.2em;
-  font-weight: 300;
-  line-height: 1.4em;
-}
 
 /* FlexSlider Necessary Styles
 *********************************/
@@ -587,16 +635,23 @@ html[xmlns] .slides {display: block;}
 /******************************/
 
 footer {
-  margin-top: 10px;
+  margin-top: 30px;
   width: 100%;
   background-color: #fff;
   border-top: 1px solid #bbb;
-  color: #111;
+  color: #111;  
+  position: relative;  
+  height: 100%;
+  bottom: 0;
+ 
+
 }
 
 #footerWrapper {
   font-size: 12px;
   color: #111;
+/*   position: relative;
+  height: 100%;*/
 }
 
 .contact-info { 
@@ -773,10 +828,10 @@ ul.socialNetwork li:first-child {
 /* WORK */
 /******************************/
 .row-work-index {
-  margin-right: 0px;
+ 
   margin-left: 0px;
   margin-top: -30px;
-  margin-bottom: -60px;
+  /*margin-bottom: -60px;*/
 }
 
 
@@ -787,14 +842,14 @@ ul.socialNetwork li:first-child {
 }
 
 .portfolio-container.grid {
-    margin-bottom: 50px;
+    /*margin-bottom: 30px;*/
 }
 
 .grid .portfolio-item {
     float: left;
     margin: 0;
     /*max-width: 24.9%;*/
-    max-width: 25%;
+    max-width: 33.3%;
 }
 
 /* All Mobile Sizes (devices and browser) */
@@ -922,7 +977,7 @@ body,
 
 .portfolio-item .item-description .item-title {
     font-family: 'AvenirLTStd-Light', sans-serif;
-    font-size: 16px;
+    font-size: 1.3em;
     text-transform: uppercase;
     font-weight: 400;
     margin-bottom: 3px;
@@ -931,8 +986,7 @@ body,
 
 .portfolio-item .item-description .item-tags {
     font-family: "AvenirLTStd-LightOblique", sans-serif;
-   /* font-style: italic;*/
-    font-size: 12px;
+    font-size: 1em;
     color: #bbb;
     margin-top: 3px;
 }
@@ -945,7 +999,7 @@ body,
     float: left;
     margin: 0;
     /*max-width: 24.9%;*/
-    max-width: 25%;
+    max-width: 33.3%;
 }
 
 
