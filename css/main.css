@@ -261,16 +261,14 @@ input[type="button"] {
     -webkit-appearance: none;
     display: inline-block;
     font-size: 11px;
-    letter-spacing: normal;
-    text-transform: uppercase;
+    letter-spacing: 1;
     color: #111;
-    line-height: 15px;
     font-style: normal;
     background-color: #111;
     color: #fff;
-    padding: 8px 10px 8px 11px;
+    padding: 7px 10px 7px 11px;
     cursor: pointer;
-    margin: 0 5px 10px 0;
+    margin: 0 30px 10px 0;
 
     -webkit-transition: all 0.1s ease-in;
     -moz-transition: all 0.1s ease-in;
@@ -313,24 +311,21 @@ input[type="button"]:hover {
   }
 }
 
-
 /*MAIN Headings on HOME PAGE*/
 .feature-heading {
   padding-top: 80px;
   font-family: "AvenirLTStd-Light", sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 300;
   line-height: 1.2em;
-  letter-spacing: -1px;
 }
 /* TRESOR SHOP Heading on HOME PAGE */
 .featurette-heading {
   padding-top: 150px;
   font-family: "AvenirLTStd-Light", sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 300;
   line-height: 1.2em;
-  letter-spacing: -1px;
 }
 
 .lead { 
@@ -431,9 +426,12 @@ Center vertically text next to image larger than 768px - smaller than 992px*/
   }
 
   .feature-heading {
+    font-family: "AvenirLTStd-Light", sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 1.2em;
     text-align: center;
     padding-top: 30px;
-    font-size: 14px;
   }
 
   .lead {
@@ -461,7 +459,7 @@ Center vertically text next to image larger than 768px - smaller than 992px*/
 
   .feature-heading-2 {
     font-family: "AvenirLTStd-Light", sans-serif;
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 300;
     line-height: 1.2em;
     letter-spacing: -1px;
@@ -836,13 +834,12 @@ ul.socialNetwork li:first-child {
   color: #fff; }
 
 /********************************/
-/* WORK */
+/*     WORK      */
 /******************************/
+
 .row-work-index {
- 
   margin-left: 0px;
   margin-top: -30px;
-  /*margin-bottom: -60px;*/
 }
 
 /**** Isotope Filtering - DELETE OR KEEP? ****/
@@ -851,7 +848,7 @@ ul.socialNetwork li:first-child {
 }
 
 .portfolio-container.grid {
-    /*margin-bottom: 30px;*/
+    margin-bottom: 30px;
 }
 
 .grid .portfolio-item {
@@ -988,7 +985,7 @@ body,
 
 .portfolio-item .item-description .item-title {
     font-family: 'AvenirLTStd-Light', sans-serif;
-    font-size: 1.3em;
+    font-size: 1.2em;
     text-transform: uppercase;
     font-weight: 400;
     margin-bottom: 3px;
@@ -1012,6 +1009,303 @@ body,
     /*max-width: 24.9%;*/
     max-width: 33.3%;
 }
+
+.project-heading {
+  font-family: "AvenirLTStd-Light", sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 1.2em;
+  color: #111;
+  margin-top: -30px;
+  margin-bottom: 20px;
+}
+
+
+/*RE-arrange columns for mobile and tablet */
+@media only screen and (max-width: 768px) {
+    .grid .portfolio-item {
+    float: left;
+    margin: 0;
+    /* SET COLUMN WIDTH HERE*/
+    max-width: 50%;
+    }
+
+    .project-heading {
+    font-family: "AvenirLTStd-Light", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.2em;
+    color: #111;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .grid .portfolio-item {
+    float: left;
+    margin: 0;
+   /* SET COLUMN WIDTH HERE*/
+    max-width: 100%;
+    }
+
+     .project-heading {
+    font-family: "AvenirLTStd-Light", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.2em;
+    color: #111;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    }
+
+}
+
+/********************************/
+/*  PROFILE - contact form     */
+/******************************/
+
+/*#contact { 
+  display: block; 
+  width: auto; 
+  margin: 0; 
+  padding: 0px; 
+  border: none; 
+  background: #e9e9e9; 
+  overflow:visible 
+}
+
+#contact label { 
+  display: none; 
+  float: none; 
+  height:0px; 
+}
+input, textarea, select { 
+  width:500px; 
+  padding:20px 25px 22px 25px; 
+  font: 15px 'AvenirLTStd-Light', sans-serif; 
+  color: #111; 
+  border:0; 
+  border-bottom: 2px solid #111; 
+  -webkit-transition: all 0.2s ease 0s; 
+  -moz-transition: all 0.2s ease 0s; 
+  -o-transition: all 0.2s ease 0s; 
+  transition: all 0.2s ease 0s; 
+  float: none; 
+  display: block;
+}
+#contact input.third { 
+  margin: 0px 0px 0px 0 !important; 
+}
+#contact textarea { 
+  margin-bottom:0px; 
+  margin-right:0px !important; 
+  width:236px; 
+  border:0px; 
+  border-right: 2px solid #111; 
+  height:100px; 
+  display:block; }
+
+input:focus, textarea:focus, select:focus { 
+  background:#e9e9e9; 
+}
+input.submit { 
+  display:block; 
+  position:absolute; 
+  bottom:0px; 
+  right:0px; 
+  width:64px; 
+  height:100px; 
+  -moz-transition: all 0.2s ease 0s; 
+  -o-transition: all 0.2s ease 0s; 
+  transition: all 0.2s ease 0s; 
+  border:0px; 
+  padding:0px; 
+  background:url(../images/bg-send.png) 
+  center center no-repeat; 
+  background-size:24px 28px; 
+  text-indent:-9999px; 
+  cursor:pointer}
+
+#contact input.submit:hover { 
+  background-color:#e9e9e9; }
+
+
+#contact fieldset { padding-left:0px;}
+
+#message { 
+  margin: 0; padding: 0px; 
+  z-index:5500; 
+  position:absolute !important; 
+  top:0px; left:0px; 
+  background:#fff; 
+  height:100%; 
+  min-height:100%; }
+
+#success_page { 
+  display: block; 
+  width:300px; 
+  height:100%; 
+  min-height:100%; 
+  padding:30px 35px; }
+
+.error_message { 
+  display: block; 
+  width:300px; 
+  height:100%; 
+  min-height:100%; 
+  padding:30px 35px; 
+  background:url(../images/bg-close.png) no-repeat 247px 234px #FBE3E4;  
+  background-size:18px 18px; 
+  color:#8a1f11; 
+  cursor:pointer }
+
+#contact .padding-right {
+  padding-right:20px; }
+
+.alignleft { float:left; }
+
+.padding-right {padding-right:30px; }*/
+
+
+/* Form Input fields etc */
+form {
+    margin-bottom: 30px;
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+    width: 100%;
+    height: 50px;
+
+    font-family: "Inika";
+    font-size: 13px;
+    color: #333;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    margin-bottom: 25px;
+
+    -webkit-appearance: none;
+    box-shadow: 3px 3px 0 #eee;
+    border-radius: 0;
+    border: 1px solid #eee;
+    padding: 0 45px 0 15px;
+}
+
+textarea {
+    min-height: 200px;
+    padding-top: 18px;
+}
+
+::-webkit-input-placeholder {
+    font-size: 11px;
+    color: #aaa;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 22px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    font-size: 11px;
+    color: #aaa;
+    font-weight: 300;
+    font-style: italic;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    font-size: 11px;
+    color: #aaa;
+    font-weight: 300;
+    font-style: italic;
+}
+
+input:-ms-input-placeholder {
+    font-size: 11px;
+    color: #aaa;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.input-field .placeholder {
+    font-size: 11px;
+    color: #aaa;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.input-field {
+    position: relative;
+    margin: 0;
+    cursor: text;
+}
+
+.input-field:before {
+    position: absolute;
+    right: 13px;
+    top: 13px;
+    color: #ddd;
+    font-size: 21px;
+}
+
+input.error,
+textarea.error {
+    border: 1px solid #ec3a33;
+    box-shadow: none;
+}
+
+input.valid,
+textarea.valid {
+    border: 1px solid #7ec0f0;
+}
+
+label.error {
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    color: #c57c7e;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+input[disabled], select[disabled], textarea[disabled], input[readonly], select[readonly], textarea[readonly] {
+    box-shadow: none;
+    color: white;
+    pointer-events: none;
+
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    -khtml-opacity: 0.7;
+    opacity: 0.7;
+}
+
+.submit-button {
+    margin-left: 15px;
+}
+
+
+
+
+
+
 
 
 
