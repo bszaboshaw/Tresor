@@ -4835,7 +4835,7 @@ NAVBAR FIXED TO TOP
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #fff;
-  background-color: #111;
+  background-color: black;
 }
 
 .navbar-default .navbar-nav > .disabled > a,

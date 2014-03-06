@@ -304,34 +304,48 @@ input[type="button"]:hover {
 @media (max-width: 768px) {
 
 
-  .button { 
+  /*.button { 
     font-size: 12px;
     padding: 12px;
-    text-transform: uppercase;
+    text-transform: uppercase;*/
   }
 }
 
 /*MAIN Headings on HOME PAGE*/
+
+h2 {
+  font-family: "AvenirLTStd-Light", sans-serif;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: normal;
+  font-weight: normal;
+}
+
 .feature-heading {
   padding-top: 80px;
   font-family: "AvenirLTStd-Light", sans-serif;
-  font-size: 25px;
-  font-weight: 300;
-  line-height: 1.2em;
+  font-size: 22px;
+ /* font-weight: 300;*/
+  line-height: 28px;
 }
 /* TRESOR SHOP Heading on HOME PAGE */
 .featurette-heading {
   padding-top: 150px;
   font-family: "AvenirLTStd-Light", sans-serif;
-  font-size: 25px;
-  font-weight: 300;
-  line-height: 1.2em;
+  font-size: 22px;
+  /*font-weight: 300;*/
+  line-height: 28px;
 }
 
 .lead { 
-  font-size: 1.2em;
+  font-size: 15px;
+  line-height: 20px;
   font-weight: 300;
-  line-height: 1.4em;
+  font-style: normal;
+  color: #111;
+  /*font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1.4em;*/
 }
 
 /*Bootstrap 3 - Carousel Layout on BOOTPLY */
@@ -428,8 +442,8 @@ Center vertically text next to image larger than 768px - smaller than 992px*/
   .feature-heading {
     font-family: "AvenirLTStd-Light", sans-serif;
     font-size: 25px;
-    font-weight: 300;
-    line-height: 1.2em;
+    /*font-weight: 300;*/
+    line-height: 28px;
     text-align: center;
     padding-top: 30px;
   }
@@ -439,6 +453,11 @@ Center vertically text next to image larger than 768px - smaller than 992px*/
     padding-bottom: 30px;
     margin-top: 30px;
     margin-bottom: ;
+  }
+
+  .text-muted { 
+    /*same as border colour in NAV */
+    color: #ddd;
   }
 
 /*  Tresor Shop Text centred horizontally */
@@ -459,10 +478,12 @@ Center vertically text next to image larger than 768px - smaller than 992px*/
 
   .feature-heading-2 {
     font-family: "AvenirLTStd-Light", sans-serif;
-    font-size: 26px;
-    font-weight: 300;
-    line-height: 1.2em;
-    letter-spacing: -1px;
+    font-size: 22px;
+    /*font-weight: 300;*/
+    line-height: 28px;
+    font-weight: normal;
+    font-style: normal;
+   /* letter-spacing: -1px;*/
     padding-top: 0;
   }
 
@@ -1012,9 +1033,9 @@ body,
 
 .project-heading {
   font-family: "AvenirLTStd-Light", sans-serif;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 300;
-  line-height: 1.2em;
+  line-height: 28px;
   color: #111;
   margin-top: -30px;
   margin-bottom: 20px;
@@ -1065,110 +1086,6 @@ body,
 /*  PROFILE - contact form     */
 /******************************/
 
-/*#contact { 
-  display: block; 
-  width: auto; 
-  margin: 0; 
-  padding: 0px; 
-  border: none; 
-  background: #e9e9e9; 
-  overflow:visible 
-}
-
-#contact label { 
-  display: none; 
-  float: none; 
-  height:0px; 
-}
-input, textarea, select { 
-  width:500px; 
-  padding:20px 25px 22px 25px; 
-  font: 15px 'AvenirLTStd-Light', sans-serif; 
-  color: #111; 
-  border:0; 
-  border-bottom: 2px solid #111; 
-  -webkit-transition: all 0.2s ease 0s; 
-  -moz-transition: all 0.2s ease 0s; 
-  -o-transition: all 0.2s ease 0s; 
-  transition: all 0.2s ease 0s; 
-  float: none; 
-  display: block;
-}
-#contact input.third { 
-  margin: 0px 0px 0px 0 !important; 
-}
-#contact textarea { 
-  margin-bottom:0px; 
-  margin-right:0px !important; 
-  width:236px; 
-  border:0px; 
-  border-right: 2px solid #111; 
-  height:100px; 
-  display:block; }
-
-input:focus, textarea:focus, select:focus { 
-  background:#e9e9e9; 
-}
-input.submit { 
-  display:block; 
-  position:absolute; 
-  bottom:0px; 
-  right:0px; 
-  width:64px; 
-  height:100px; 
-  -moz-transition: all 0.2s ease 0s; 
-  -o-transition: all 0.2s ease 0s; 
-  transition: all 0.2s ease 0s; 
-  border:0px; 
-  padding:0px; 
-  background:url(../images/bg-send.png) 
-  center center no-repeat; 
-  background-size:24px 28px; 
-  text-indent:-9999px; 
-  cursor:pointer}
-
-#contact input.submit:hover { 
-  background-color:#e9e9e9; }
-
-
-#contact fieldset { padding-left:0px;}
-
-#message { 
-  margin: 0; padding: 0px; 
-  z-index:5500; 
-  position:absolute !important; 
-  top:0px; left:0px; 
-  background:#fff; 
-  height:100%; 
-  min-height:100%; }
-
-#success_page { 
-  display: block; 
-  width:300px; 
-  height:100%; 
-  min-height:100%; 
-  padding:30px 35px; }
-
-.error_message { 
-  display: block; 
-  width:300px; 
-  height:100%; 
-  min-height:100%; 
-  padding:30px 35px; 
-  background:url(../images/bg-close.png) no-repeat 247px 234px #FBE3E4;  
-  background-size:18px 18px; 
-  color:#8a1f11; 
-  cursor:pointer }
-
-#contact .padding-right {
-  padding-right:20px; }
-
-.alignleft { float:left; }
-
-.padding-right {padding-right:30px; }*/
-
-
-/* Form Input fields etc */
 form {
     margin-bottom: 30px;
 }
@@ -1192,9 +1109,9 @@ input[type="color"],
     width: 100%;
     height: 50px;
 
-    font-family: "Inika";
+    font-family: "AvenirLTStd-Light", sans-serif;
     font-size: 13px;
-    color: #333;
+    color: #111;
 
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1203,9 +1120,9 @@ input[type="color"],
     margin-bottom: 25px;
 
     -webkit-appearance: none;
-    box-shadow: 3px 3px 0 #eee;
+    /*box-shadow: 3px 3px 0 #111;*/
     border-radius: 0;
-    border: 1px solid #eee;
+    border: 1px solid #ddd;
     padding: 0 45px 0 15px;
 }
 
@@ -1215,37 +1132,37 @@ textarea {
 }
 
 ::-webkit-input-placeholder {
-    font-size: 11px;
-    color: #aaa;
+    font-size: 10px;
+    color: #111;
     font-weight: 300;
-    font-style: italic;
+    font-style: normal;
     line-height: 22px;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-    font-size: 11px;
-    color: #aaa;
+    font-size: 10px;
+    color: #111;
     font-weight: 300;
     font-style: italic;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
     font-size: 11px;
-    color: #aaa;
+    color: #111;
     font-weight: 300;
     font-style: italic;
 }
 
 input:-ms-input-placeholder {
     font-size: 11px;
-    color: #aaa;
+    color: #111;
     font-weight: 300;
     font-style: italic;
 }
 
 .input-field .placeholder {
     font-size: 11px;
-    color: #aaa;
+    color: #111;
     font-weight: 300;
     font-style: italic;
 }
@@ -1266,19 +1183,21 @@ input:-ms-input-placeholder {
 
 input.error,
 textarea.error {
+  /*bright red for error */
     border: 1px solid #ec3a33;
     box-shadow: none;
 }
 
 input.valid,
 textarea.valid {
-    border: 1px solid #7ec0f0;
+    border: 1px solid #111;
 }
 
 label.error {
     position: absolute;
     bottom: 2px;
     left: 0;
+    /* light red for Error message-*/
     color: #c57c7e;
     font-style: italic;
     font-weight: 700;
@@ -1298,7 +1217,8 @@ input[disabled], select[disabled], textarea[disabled], input[readonly], select[r
 }
 
 .submit-button {
-    margin-left: 15px;
+    border: none;
+    margin-right: 0;
 }
 
 
