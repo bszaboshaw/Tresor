@@ -1094,20 +1094,20 @@ body,
   display: block;
   height: auto;
   max-width: 100%;
-  padding-bottom: 6px;
-  padding-top: 6px;
+  padding-bottom: 7px;
+  padding-top: 7px;
 }
 
 .project-title {
   font-family: "AvenirLTStd-Light", sans-serif;
   font-size: 22px;
   line-height: 28px;
-  margin-top: 30px;
+  margin-top: 20px;
   color: #111;
 }
 
 .project-info {
-  margin-top: 71px;
+  margin-top: 61px;
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
@@ -1132,28 +1132,31 @@ li.role:nth-child(5) {
 
 }
 
+/*li.role:nth-last-child(2) {
+  border-bottom: 1px solid #111;
+}*/
+
 .project-button {
 margin-top: 30px;
 }
 
 /********************************/
-/*  PROFILE - contact form     */
+/*          PROFILE            */
 /******************************/
 
 .about { 
-  font-family: "Akkurat", sans-serif;
-  font-variant: "akkurat-light";
+  font-family: "AvenirLTStd-Light", sans-serif;
   font-style: normal;
   font-weight: normal;
-
+  font-weight: 400;
   margin-top: 0px;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 20px;
   color: #111;
 }
 
-.skills {
-  margin-top: 5px;
+.skills, .tech-skills {
+  margin-top: 0px;
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
@@ -1162,20 +1165,44 @@ margin-top: 30px;
   width: 100%;
 }
 
-.tech-skills {
-  margin-top: 15px;
+.creative-skills, .tech {
+ font-family: "AvenirLTStd-Light", sans-serif;
   font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  font-style: normal;
-  color: #111;
+  line-height: 15px !important;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  border-top: 1px solid #111;
   width: 100%;
+  list-style: none;
 }
 
+li.creative-skills:nth-child(6), 
+li.tech:nth-child(6) {
+  border-bottom: 1px solid #111;
+}
 
+.skills-wrapper { 
+  margin-bottom: 15px;
+  margin-top: -30px;
+}
+
+@media only screen and (max-width: 992px) {
+  .profile-mob {
+    padding-top: 35px;
+  }
+
+  .skills-wrapper { 
+  margin-top: 20px;
+}
+}
+
+/********************************/
+/*      CONTACT FORM           */
+/******************************/
 
 form {
     margin-bottom: 30px;
+    margin-top: 25px;
 }
 
 textarea,
@@ -1195,33 +1222,32 @@ input[type="tel"],
 input[type="color"],
 .uneditable-input {
     width: 100%;
-    height: 50px;
-
+    height: 47px;
     font-family: "AvenirLTStd-Light", sans-serif;
     font-size: 13px;
-    color: #111;
-
+    color: #fff;
+    text-transform: uppercase;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-
-    margin-bottom: 25px;
-
+    margin-bottom: 10px;
     -webkit-appearance: none;
     /*box-shadow: 3px 3px 0 #111;*/
     border-radius: 0;
-    border: 1px solid #111;
+    /*border: 1px solid #111;*/
+    background: #111;
+    border: none;
     padding: 0 45px 0 15px;
 }
 
 textarea {
-    min-height: 200px;
+    min-height: 161px;
     padding-top: 18px;
 }
 
 ::-webkit-input-placeholder {
     font-size: 10px;
-    color: #111;
+    color: #fff;
     font-weight: 300;
     font-style: normal;
     line-height: 22px;
@@ -1229,29 +1255,29 @@ textarea {
 
 :-moz-placeholder { /* Firefox 18- */
     font-size: 10px;
-    color: #111;
+    color: #fff;
     font-weight: 300;
     font-style: italic;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
     font-size: 11px;
-    color: #111;
+    color: #fff;
     font-weight: 300;
     font-style: italic;
 }
 
 input:-ms-input-placeholder {
     font-size: 11px;
-    color: #111;
-    font-weight: 300;
+    color: #fff;
+    font-weight: normal;
     font-style: italic;
 }
 
 .input-field .placeholder {
     font-size: 11px;
-    color: #111;
-    font-weight: 300;
+    color: #fff;
+    font-weight: normal;
     font-style: italic;
 }
 
@@ -1265,7 +1291,7 @@ input:-ms-input-placeholder {
     position: absolute;
     right: 13px;
     top: 13px;
-    color: #ddd;
+    color: #fff;
     font-size: 21px;
 }
 
@@ -1288,7 +1314,7 @@ label.error {
     /* light red for Error message-*/
     color: #c57c7e;
     font-style: italic;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 12px;
 }
 
@@ -1307,6 +1333,7 @@ input[disabled], select[disabled], textarea[disabled], input[readonly], select[r
 .submit-button {
     border: none;
     margin-right: 0;
+    margin-top: 0px;
 }
 
 
