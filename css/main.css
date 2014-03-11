@@ -71,6 +71,11 @@ body {
     font-style: normal;
 }
 
+/*.logo {
+  width: 50px;
+  height: auto;
+}*/
+
 .logo:hover {
   opacity: 0.5;
 }
@@ -212,8 +217,17 @@ ul.navbar-right li:last-child(4) {
     margin-top: 0;
 }
 
-a:hover img {
+/*a:hover img {
     opacity: 0.9;
+}*/
+
+.rslides img:hover {
+  opacity: 0.9;
+/*  display: block;
+  padding-top: 3px;
+  border-top: 3px solid #111;
+  -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);*/
 }
 
 /* colours for TESTING columns - TEMP! */
@@ -1027,10 +1041,10 @@ body,
 }
 
 .grid .portfolio-item {
-    float: left;
-    margin: 0;
-    /*max-width: 24.9%;*/
-    max-width: 33.3%;
+  float: left;
+  margin: 0;
+  /*max-width: 24.9%;*/
+  max-width: 33.3%;
 }
 
 /*Selected Projects title on Work Index Page*/
@@ -1127,17 +1141,100 @@ body,
   list-style: none;
 }
 
-li.role:nth-child(5) {
+/*li.role:nth-child(5) {
+ border-bottom: 1px solid #111;
+}*/
+
+li.role:last-of-type {
  border-bottom: 1px solid #111;
 
 }
 
-/*li.role:nth-last-child(2) {
-  border-bottom: 1px solid #111;
-}*/
-
 .project-button {
-margin-top: 30px;
+  margin-top: 30px;
+}
+
+/********************************/
+/*   Portfolio Navigation      */
+/******************************/
+
+.portfolio-nav {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/*adjust right margin to line up*/
+  .portfolio-nav-right { 
+  margin-right: -20px;
+}
+
+.portfolio-nav a {
+  display: inline-block;
+  border: none;
+  color: #111;
+  font-family: "AvenirLTStd-Light", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  padding: 0 20px 0 0;
+}
+
+.portfolio-nav .pull-right a {
+  border-right: 1px solid #bbb;
+}
+
+.portfolio-nav .pull-right a:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+/*LEFT arrow-*/
+.portfolio-nav a:before {
+  font-family: 'custom-icons';
+  content: '\e8f4';
+  speak: none;
+  font-size: 11px;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: normal;
+  font-style: normal;
+  margin: 0 5px -5px 0;
+  position: relative;
+  top: 0px;
+  padding-right: 6px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.portfolio-nav a:hover {
+  color: #bbb;
+  background: none;
+}
+
+.portfolio-nav .nav-next {
+  padding: 0 0 0 20px;
+}
+/*RIGHT arrow-*/
+.portfolio-nav .nav-next:before {
+  font-family: 'custom-icons';
+  content: "\e8f5";
+  float: right;
+  padding-left: 6px;
+  margin: 0 0 0 6px;
+  top: 3px;
+}
+
+.portfolio-nav .nav-overview:before {
+  font-family: 'custom-icons';
+  content: '\e80c';
+  top: 0px;
+  margin: 0 6px 0 -15px;
+}
+
+@media only screen and (max-width: 479px) {
+    .portfolio-nav span {
+        display: none;
+    }
 }
 
 /********************************/
