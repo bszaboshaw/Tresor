@@ -4822,20 +4822,20 @@ NAVBAR FIXED TO TOP
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #111;
+  color: #000;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: #fff;
-  background-color: #111;
+  background-color: #000;
 }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #fff;
-  background-color: black;
+  background-color: #000;
 }
 
 .navbar-default .navbar-nav > .disabled > a,

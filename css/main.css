@@ -14,7 +14,7 @@ Author: Bettina Szabo-Shaw
 }
 
 body {
-    padding-top: 70px;
+     padding-top: 70px;
      color: #111;
      font-size: 12px;
      line-height: 1.4;
@@ -1322,8 +1322,8 @@ input[type="color"],
     height: 47px;
     font-family: "AvenirLTStd-Light", sans-serif;
     font-size: 13px;
-    color: #fff;
-    text-transform: uppercase;
+    color: #111;
+    /*text-transform: uppercase;*/
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -1332,7 +1332,7 @@ input[type="color"],
     /*box-shadow: 3px 3px 0 #111;*/
     border-radius: 0;
     /*border: 1px solid #111;*/
-    background: #111;
+    background: #e9e9e9;
     border: none;
     padding: 0 45px 0 15px;
 }
@@ -1344,7 +1344,8 @@ textarea {
 
 ::-webkit-input-placeholder {
     font-size: 10px;
-    color: #fff;
+    color: #111;
+    text-transform: none;
     font-weight: 300;
     font-style: normal;
     line-height: 22px;
@@ -1352,28 +1353,28 @@ textarea {
 
 :-moz-placeholder { /* Firefox 18- */
     font-size: 10px;
-    color: #fff;
+    color: #111;
     font-weight: 300;
     font-style: italic;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
     font-size: 11px;
-    color: #fff;
+    color: #111;
     font-weight: 300;
     font-style: italic;
 }
 
 input:-ms-input-placeholder {
     font-size: 11px;
-    color: #fff;
+    color: #111;
     font-weight: normal;
     font-style: italic;
 }
 
 .input-field .placeholder {
     font-size: 11px;
-    color: #fff;
+    color: #111;
     font-weight: normal;
     font-style: italic;
 }
@@ -1382,14 +1383,16 @@ input:-ms-input-placeholder {
     position: relative;
     margin: 0;
     cursor: text;
+    text-transform: none;
 }
 
 .input-field:before {
     position: absolute;
     right: 13px;
     top: 13px;
-    color: #fff;
+    color: #111;
     font-size: 21px;
+    text-transform: none;
 }
 
 input.error,
