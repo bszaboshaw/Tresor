@@ -443,7 +443,7 @@ Center vertically text next to image larger than 768px - smaller than 992px*/
     margin-left: auto;
     margin-right: auto;
     vertical-align: center;
-   margin-top: -20px;
+    margin-top: -20px;
   }
 
     .feature-img-right {
@@ -458,15 +458,16 @@ Center vertically text next to image larger than 768px - smaller than 992px*/
     font-size: 25px;
     /*font-weight: 300;*/
     line-height: 28px;
-    text-align: center;
+    text-align: left;
     padding-top: 30px;
   }
 
   .lead {
-    text-align: center;
-    padding-bottom: 30px;
-    margin-top: 30px;
-    margin-bottom: ;
+    text-align: left;
+    padding-bottom: 10px;
+    padding-top: 10px;
+ /*   margin-top: 30px;
+    margin-bottom: 10px;*/
   }
 
   .text-muted { 
@@ -474,10 +475,10 @@ Center vertically text next to image larger than 768px - smaller than 992px*/
     color: #ddd;
   }
 
-/*  Tresor Shop Text centred horizontally */
+/*  Tresor Shop Text centred horizontally - superceeded*/
   h2.featurette-heading {
     padding-top: 0px;
-    text-align: center;
+    text-align: left;
   }
 
   .button { 
@@ -878,7 +879,7 @@ ul.socialNetwork li:first-child {
   margin-top: -30px;
 }
 
-/**** Isotope Filtering - DELETE OR KEEP? ****/
+/**** Isotope Filtering - KEEP for now ****/
 .portfolio-container .col-sm-3 {
     margin-right: -1px;
 }
@@ -959,16 +960,10 @@ body,
     position: absolute;
     top: 0;
     left: 0;
-
     width: 100%;
     height: 100%;
-
-   /* background: #111;*/
-    /*background: rgba(0, 0, 0, 0.75);*/
     background: rgba(255, 255, 255, 0.75);
-
     text-align: center;
-
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     filter: alpha(opacity=0);
     -moz-opacity: 0;
@@ -1016,6 +1011,12 @@ body,
     padding: 0 30px;
 }
 
+@media only screen and (max-width: 768px) {
+.portfolio-item .inner-content {
+    top: 35%;
+  }
+}
+
 .portfolio-item .inner-content span {
     display: block;
 }
@@ -1051,7 +1052,7 @@ body,
 
 .project-heading {
   font-family: "AvenirLTStd-Light", sans-serif;
-  font-size: 22px;
+  font-size: 19px;
   font-weight: 300;
   line-height: 28px;
   color: #111;
@@ -1060,7 +1061,7 @@ body,
 }
 
 
-/*RE-arrange columns for mobile and tablet */
+/*Re-arrange columns for mobile and tablet */
 @media only screen and (max-width: 768px) {
     .grid .portfolio-item {
     float: left;
@@ -1088,7 +1089,7 @@ body,
     max-width: 100%;
     }
 
-     .project-heading {
+    .project-heading {
     font-family: "AvenirLTStd-Light", sans-serif;
     font-size: 16px;
     font-weight: 300;
@@ -1097,7 +1098,6 @@ body,
     margin-top: -30px;
     margin-bottom: 20px;
     }
-
 }
 
 /********************************/
@@ -1247,8 +1247,8 @@ li.role:last-of-type {
   font-weight: normal;
   font-weight: 400;
   margin-top: 0px;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 16px;
   color: #111;
 }
 
