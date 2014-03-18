@@ -14,12 +14,14 @@ Author: Bettina Szabo-Shaw
 }
 
 body {
-     padding-top: 70px;
-     color: #111;
-     font-size: 12px;
-     line-height: 1.4;
-     font-family: "AvenirLTStd-Light", sans-serif;
-     background-color: #fff;
+    padding-top: 70px;
+    color: #111;
+    font-size: 12px;
+    line-height: 1.4;
+    font-family: "omnes-pro",sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    background-color: #fff;
 }
 
 .navbar {
@@ -27,18 +29,7 @@ body {
   z-index: 9997;
 }
 
-@font-face {
-    font-family: 'Akkurat';
-    src: url('fonts/akkurat-light.eot');
-    src: url('fonts/akkurat-light.eot?#iefix') format('embedded-opentype'),
-         url('fonts/akkurat-light.woff') format('woff'),
-         url('fonts/akkurat-light.ttf') format('truetype'),
-         url('fonts/akkurat-light.svg#avenir') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
+/*@font-face {
     font-family: 'Avenir';
     src: url('fonts/AvenirLTStd-LightOblique.eot');
     src: url('fonts/AvenirLTStd-LightOblique.eot?#iefix') format('embedded-opentype'),
@@ -58,7 +49,7 @@ body {
          url('fonts/AvenirLTStd-Light.svg#avenier') format('svg');
     font-weight: normal;
     font-style: normal;
-}
+}*/
 
 @font-face {
     font-family: 'EntypoRegular';
@@ -105,9 +96,11 @@ body {
 }
 
 ul.navbar-right {
-	   font-family: 'AvenirLTStd-Light', sans-serif;
+	   font-family: "omnes-pro",sans-serif;
+    font-style: normal;
+     font-family: "omnes-pro";
 	   text-transform: uppercase;
-	   font-weight: 400;
+	   font-weight: 500;
 }
 
 ul.navbar-right li {
@@ -168,7 +161,9 @@ ul.navbar-right li:last-child(4) {
     color: #111;
     margin-left: -30px;
     margin-right: -30px;
-    font-family: "AvenirLTStd-Light", sans-serif;
+    font-family: "omnes-pro",sans-serif;
+    font-style: normal;
+    font-weight: 300;
     font-size: 12px;
     margin-bottom: -30px;
     padding-top: 30px;
@@ -275,7 +270,7 @@ input[type="button"] {
     -webkit-appearance: none;
     display: inline-block;
     font-size: 11px;
-    letter-spacing: 1;
+    letter-spacing: normal;
     color: #111;
     font-style: normal;
     background-color: #111;
@@ -328,16 +323,15 @@ input[type="button"]:hover {
 /*MAIN Headings on HOME PAGE*/
 
 h2 {
-  font-family: "AvenirLTStd-Light", sans-serif;
+  font-family: "futura-pt",sans-serif;
   font-size: 22px;
   line-height: 28px;
-  font-weight: normal;
   font-weight: normal;
 }
 
 .feature-heading {
   padding-top: 80px;
-  font-family: "AvenirLTStd-Light", sans-serif;
+  font-family: "futura-pt",sans-serif;
   font-size: 22px;
  /* font-weight: 300;*/
   line-height: 28px;
@@ -345,7 +339,7 @@ h2 {
 /* TRESOR SHOP Heading on HOME PAGE */
 .featurette-heading {
   padding-top: 150px;
-  font-family: "AvenirLTStd-Light", sans-serif;
+  font-family: "futura-pt",sans-serif;
   font-size: 22px;
   /*font-weight: 300;*/
   line-height: 28px;
@@ -454,7 +448,7 @@ Center vertically text next to image larger than 768px - smaller than 992px*/
   }
 
   .feature-heading {
-    font-family: "AvenirLTStd-Light", sans-serif;
+    font-family: "futura-pt",sans-serif;
     font-size: 25px;
     /*font-weight: 300;*/
     line-height: 28px;
@@ -492,7 +486,7 @@ Center vertically text next to image larger than 768px - smaller than 992px*/
   /*Equalize vertical margins - use row-featurette-divider class from above*/
 
   .feature-heading-2 {
-    font-family: "AvenirLTStd-Light", sans-serif;
+    font-family: "futura-pt",sans-serif;
     font-size: 22px;
     /*font-weight: 300;*/
     line-height: 28px;
@@ -831,7 +825,9 @@ ul.socialNetwork li:first-child {
     font-size: 0.9em;
     padding: 12px 0;
     line-height: 0.9em;
-    font-family: "AvenirLTStd-Light", sans-serif;
+    font-family: "omnes-pro",sans-serif;
+    font-style: normal;
+    font-weight: 300;
     letter-spacing: normal;
 }
 
@@ -1022,16 +1018,19 @@ body,
 }
 
 .portfolio-item .item-description .item-title {
-    font-family: 'AvenirLTStd-Light', sans-serif;
+    font-family: "omnes-pro",sans-serif;
+    font-style: normal;
+    font-weight: 400;
     font-size: 1.2em;
     text-transform: uppercase;
-    font-weight: 400;
     margin-bottom: 3px;
     color: #111;
 }
 
 .portfolio-item .item-description .item-tags {
-    font-family: "AvenirLTStd-LightOblique", sans-serif;
+    font-family: "omnes-pro",sans-serif;
+    font-style: normal;
+    font-weight: 300;
     font-size: 1em;
     color: #111;
     margin-top: 3px;
@@ -1051,9 +1050,10 @@ body,
 /*Selected Projects title on Work Index Page*/
 
 .project-heading {
-  font-family: "AvenirLTStd-Light", sans-serif;
+  font-family: "omnes-pro",sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 19px;
-  font-weight: 300;
   line-height: 28px;
   color: #111;
   margin-top: -30px;
@@ -1071,7 +1071,9 @@ body,
     }
 
     .project-heading {
-    font-family: "AvenirLTStd-Light", sans-serif;
+    font-family: "omnes-pro",sans-serif;
+    font-style: normal;
+    font-weight: 300;
     font-size: 20px;
     font-weight: 300;
     line-height: 1.2em;
@@ -1090,9 +1092,10 @@ body,
     }
 
     .project-heading {
-    font-family: "AvenirLTStd-Light", sans-serif;
-    font-size: 16px;
+    font-family: "omnes-pro",sans-serif;
+    font-style: normal;
     font-weight: 300;
+    font-size: 16px;
     line-height: 1.2em;
     color: #111;
     margin-top: -30px;
@@ -1113,7 +1116,7 @@ body,
 }
 
 .project-title {
-  font-family: "AvenirLTStd-Light", sans-serif;
+  font-family: "futura-pt",sans-serif;
   font-size: 22px;
   line-height: 28px;
   margin-top: 20px;
@@ -1131,7 +1134,9 @@ body,
 }
 
 .role {
-  font-family: "AvenirLTStd-Light", sans-serif;
+  font-family: "omnes-pro",sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 12px;
   line-height: 15px !important;
   padding-bottom: 8px;
@@ -1172,10 +1177,10 @@ li.role:last-of-type {
   display: inline-block;
   border: none;
   color: #111;
-  font-family: "AvenirLTStd-Light", sans-serif;
-  font-size: 12px;
+  font-family: "omnes-pro",sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 300;
+  font-size: 12px;
   padding: 0 20px 0 0;
 }
 
@@ -1242,13 +1247,12 @@ li.role:last-of-type {
 /******************************/
 
 .about { 
-  font-family: "AvenirLTStd-Light", sans-serif;
+  font-family: "omnes-pro",sans-serif;
   font-style: normal;
-  font-weight: normal;
-  font-weight: 400;
+  font-weight: 300;
   margin-top: 0px;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 15px;
+  line-height: 20px;
   color: #111;
 }
 
@@ -1263,7 +1267,9 @@ li.role:last-of-type {
 }
 
 .creative-skills, .tech {
- font-family: "AvenirLTStd-Light", sans-serif;
+  font-family: "omnes-pro",sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 12px;
   line-height: 15px !important;
   padding-bottom: 8px;
@@ -1284,14 +1290,96 @@ li.tech:nth-child(6) {
 }
 
 @media only screen and (max-width: 992px) {
-  .profile-mob {
-    padding-top: 35px;
-  }
-
   .skills-wrapper { 
   margin-top: 20px;
+  }
 }
+
+.quote { 
+  color: #111;
+  text-align: left;
+  font-family: "omnes-pro";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
 }
+
+.quote-by { 
+  font-family: "omnes-pro",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  margin-top: 0px;
+  font-size: 15px;
+  line-height: 20px;
+  color: #111;
+}
+
+/* PFROFILE Area for: 1200px or larger - FIXED HEIGHT*/
+.profile-quote { 
+  margin-top: 30px;
+  border-top: 2px solid #111;
+  border-bottom: 2px solid #111;
+  padding: 30px;
+  height: 150px;
+}
+
+/*PFROFILE Area for: 1200px or below*/
+@media only screen and (max-width: 1200px) {
+  .about {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .profile-quote {
+      padding: 15px;
+      height: 100px;
+      margin-top: 15px;
+    }
+
+    .quote { 
+    color: #111;
+    text-align: left;
+    font-family: "omnes-pro";
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    }
+
+    .quote-by {
+    font-size: 12px;
+    }
+
+}
+
+
+@media only screen and (max-width: 992px) {
+
+  .quote { 
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    }
+
+    .profile-quote {
+    text-align: center;
+    color: red;
+    }
+
+    .profile-mob {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+  .profile-quote {
+    height: auto;
+  }
+  
+}
+
 
 /********************************/
 /*      CONTACT FORM           */
@@ -1320,7 +1408,7 @@ input[type="color"],
 .uneditable-input {
     width: 100%;
     height: 47px;
-    font-family: "AvenirLTStd-Light", sans-serif;
+    font-family: "omnes-pro";
     font-size: 13px;
     color: #111;
     /*text-transform: uppercase;*/
