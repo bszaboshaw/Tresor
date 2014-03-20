@@ -1,11 +1,10 @@
 /*
- * Author: BS
- * URL: coffe altered
+ * Author: Bettina Szabo-Shaw
  *
  * Project Name: Tresor - Site Template
  * Version: 1.0
  * Last update: 05-03-2014
- * URL: -
+ * URL: www.tresordesign.com
  */
 
 (function () {
@@ -33,7 +32,7 @@
             scrollable: true
         });
 
-        /* ---------------------------------------------------------------------- */
+    /* ---------------------------------------------------------------------- */
     /*  Min-height
     /* ---------------------------------------------------------------------- */
 

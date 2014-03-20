@@ -62,11 +62,6 @@ body {
     font-style: normal;
 }
 
-/*.logo {
-  width: 50px;
-  height: auto;
-}*/
-
 .logo:hover {
   opacity: 0.5;
 }
@@ -97,8 +92,7 @@ body {
 
 ul.navbar-right {
 	   font-family: "omnes-pro",sans-serif;
-    font-style: normal;
-     font-family: "omnes-pro";
+     font-style: normal;
 	   text-transform: uppercase;
 	   font-weight: 500;
 }
@@ -163,7 +157,7 @@ ul.navbar-right li:last-child(4) {
     margin-right: -30px;
     font-family: "omnes-pro",sans-serif;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 12px;
     margin-bottom: -30px;
     padding-top: 30px;
@@ -211,10 +205,6 @@ ul.navbar-right li:last-child(4) {
 .row-divider {
     margin-top: 0;
 }
-
-/*a:hover img {
-    opacity: 0.9;
-}*/
 
 .rslides img:hover {
   opacity: 0.9;
@@ -323,37 +313,38 @@ input[type="button"]:hover {
 /*MAIN Headings on HOME PAGE*/
 
 h2 {
-  font-family: "futura-pt",sans-serif;
   font-size: 22px;
-  line-height: 28px;
-  font-weight: normal;
+  line-height: 26px;
+  font-family: "omnes-pro",sans-serif;
+  font-style: normal;
+  font-weight: 500;
 }
 
 .feature-heading {
   padding-top: 80px;
-  font-family: "futura-pt",sans-serif;
   font-size: 22px;
- /* font-weight: 300;*/
-  line-height: 28px;
+  line-height: 26px;
+  font-family: "omnes-pro",sans-serif;
+  font-style: normal;
+  font-weight: 500;
+
 }
 /* TRESOR SHOP Heading on HOME PAGE */
 .featurette-heading {
   padding-top: 150px;
-  font-family: "futura-pt",sans-serif;
   font-size: 22px;
-  /*font-weight: 300;*/
-  line-height: 28px;
+  line-height: 26px;
+  font-family: "omnes-pro",sans-serif;
+  font-style: normal;
+  font-weight: 500;
 }
 
 .lead { 
   font-size: 15px;
   line-height: 20px;
-  font-weight: 300;
   font-style: normal;
-  color: #111;
-  /*font-size: 1.2em;
   font-weight: 300;
-  line-height: 1.4em;*/
+  color: #111;
 }
 
 /*Bootstrap 3 - Carousel Layout on BOOTPLY */
@@ -448,12 +439,13 @@ Center vertically text next to image larger than 768px - smaller than 992px*/
   }
 
   .feature-heading {
-    font-family: "futura-pt",sans-serif;
-    font-size: 25px;
-    /*font-weight: 300;*/
-    line-height: 28px;
+    font-size: 22px;
+    line-height: 26px;
     text-align: left;
     padding-top: 30px;
+    font-family: "omnes-pro",sans-serif;
+    font-style: normal;
+    font-weight: 500;
   }
 
   .lead {
@@ -486,14 +478,13 @@ Center vertically text next to image larger than 768px - smaller than 992px*/
   /*Equalize vertical margins - use row-featurette-divider class from above*/
 
   .feature-heading-2 {
-    font-family: "futura-pt",sans-serif;
     font-size: 22px;
-    /*font-weight: 300;*/
-    line-height: 28px;
-    font-weight: normal;
-    font-style: normal;
-   /* letter-spacing: -1px;*/
+    line-height: 26px;
     padding-top: 0;
+    font-family: "omnes-pro",sans-serif;
+    font-style: normal;
+    font-weight: 500;
+
   }
 
   .row-no2 {
@@ -503,10 +494,9 @@ Center vertically text next to image larger than 768px - smaller than 992px*/
   .flex-container { 
     margin-top: 10px;}
 }
-/*************************/
 
-
-/* FlexSlider Necessary Styles
+/**********************************/
+/* FlexSlider Necessary Styles    /
 *********************************/
 .flexslider {
   padding: 0 0 80px 0; 
@@ -608,7 +598,6 @@ html[xmlns] .slides {display: block;}
 .flex-direction-nav li a:before {
     font-family: 'custom-icons';
     content: "\e804";
-
     speak: none;
     color: #111;
     font-size: 36px;
@@ -616,10 +605,8 @@ html[xmlns] .slides {display: block;}
     font-variant: normal;
     text-transform: none;
     line-height: normal;
-
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
     -webkit-transition: all 0.1s ease-in;
     -moz-transition: all 0.1s ease-in;
     -ms-transition: all 0.1s ease-in;
@@ -682,6 +669,7 @@ footer {
   border-top: 1px solid #bbb;
   /*border-top: 2px solid #111;*/
   color: #111;  
+  font-weight: 400;
   position: relative;  
   height: 100%;
   bottom: 0;
@@ -938,7 +926,6 @@ body,
 .portfolio-item {
     position: relative;
     display: block;
-    /*border: none;*/
     border: 1px solid #fff;
     color: white;
     margin-bottom: 30px;
@@ -1051,13 +1038,13 @@ body,
 
 .project-heading {
   font-family: "omnes-pro",sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 19px;
-  line-height: 28px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
   color: #111;
   margin-top: -30px;
   margin-bottom: 20px;
+  font-style: normal;
 }
 
 
@@ -1073,9 +1060,9 @@ body,
     .project-heading {
     font-family: "omnes-pro",sans-serif;
     font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    font-weight: 300;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
     line-height: 1.2em;
     color: #111;
     margin-top: -30px;
@@ -1094,7 +1081,7 @@ body,
     .project-heading {
     font-family: "omnes-pro",sans-serif;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.2em;
     color: #111;
@@ -1116,11 +1103,13 @@ body,
 }
 
 .project-title {
-  font-family: "futura-pt",sans-serif;
+  font-family: "omnes-pro",sans-serif;
   font-size: 22px;
-  line-height: 28px;
+  line-height: 26px;
   margin-top: 20px;
   color: #111;
+  font-style: normal;
+  font-weight: 500;
 }
 
 .project-info {
@@ -1136,7 +1125,7 @@ body,
 .role {
   font-family: "omnes-pro",sans-serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 12px;
   line-height: 15px !important;
   padding-bottom: 8px;
@@ -1146,17 +1135,24 @@ body,
   list-style: none;
 }
 
-/*li.role:nth-child(5) {
- border-bottom: 1px solid #111;
-}*/
-
 li.role:last-of-type {
  border-bottom: 1px solid #111;
-
 }
 
 .project-button {
   margin-top: 30px;
+}
+
+.project-subheader { 
+  font-family: 'omnes-pro', sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  font-style: normal;
+  font-weight: 300;
+  color: #111;
+  padding-top: 6px;
+  text-decoration: underline;
+  padding-bottom: 2px;
 }
 
 /********************************/
@@ -1249,10 +1245,10 @@ li.role:last-of-type {
 .about { 
   font-family: "omnes-pro",sans-serif;
   font-style: normal;
-  font-weight: 300;
   margin-top: 0px;
   font-size: 15px;
   line-height: 20px;
+  font-weight: 300;
   color: #111;
 }
 
@@ -1286,104 +1282,35 @@ li.tech:nth-child(6) {
 
 .skills-wrapper { 
   margin-bottom: 15px;
-  margin-top: -30px;
+  margin-top: -45px;
 }
 
 @media only screen and (max-width: 992px) {
-  .skills-wrapper { 
-  margin-top: 20px;
-  }
-}
 
-.quote { 
-  color: #111;
-  text-align: left;
-  font-family: "omnes-pro";
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 23px;
-}
-
-.quote-by { 
-  font-family: "omnes-pro",sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  margin-top: 0px;
-  font-size: 15px;
-  line-height: 20px;
-  color: #111;
-}
-
-/* PFROFILE Area for: 1200px or larger - FIXED HEIGHT*/
-.profile-quote { 
-  margin-top: 30px;
-  border-top: 2px solid #111;
-  border-bottom: 2px solid #111;
-  padding: 30px;
-  height: 150px;
-}
-
-/*PFROFILE Area for: 1200px or below*/
-@media only screen and (max-width: 1200px) {
-  .about {
-    font-size: 13px;
-    line-height: 18px;
-  }
-
-  .profile-quote {
-      padding: 15px;
-      height: 100px;
-      margin-top: 15px;
-    }
-
-    .quote { 
-    color: #111;
-    text-align: left;
-    font-family: "omnes-pro";
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 20px;
-    }
-
-    .quote-by {
-    font-size: 12px;
-    }
-
-}
-
-
-@media only screen and (max-width: 992px) {
-
-  .quote { 
-    text-align: center;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 23px;
-    }
-
-    .profile-quote {
-    text-align: center;
-    color: red;
-    }
-
-    .profile-mob {
+  .profile-mob {
       margin-top: 30px;
-      margin-bottom: 30px;
-      text-align: center;
+      margin-bottom: 15px;
+      text-align: left;
     }
-}
 
-@media only screen and (max-width: 480px) {
-  .profile-quote {
-    height: auto;
+  .skills-wrapper {
+    margin-top: 30px;
   }
-  
 }
-
 
 /********************************/
 /*      CONTACT FORM           */
 /******************************/
+
+.form-header {
+  margin-top: 0px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-style: normal;
+  color: #111;
+  width: 100%;
+  margin-left: 15px;
+}
 
 form {
     margin-bottom: 30px;
@@ -1522,6 +1449,7 @@ input[disabled], select[disabled], textarea[disabled], input[readonly], select[r
     border: none;
     margin-right: 0;
     margin-top: 0px;
+    border-radius: 0px;
 }
 
 
