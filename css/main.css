@@ -1456,9 +1456,8 @@ input[disabled], select[disabled], textarea[disabled], input[readonly], select[r
 /******************************/
 
 .article-container .article-post {
-    width: 30%;
     margin: 15px;
-    background: red;
+    background: #bbb;
     padding: 0;
     border: none;
 }
@@ -1482,7 +1481,8 @@ input[disabled], select[disabled], textarea[disabled], input[readonly], select[r
 .article-post {
     margin-bottom: 50px;
     padding-bottom: 50px;
-    border-bottom: 1px dotted #eee;
+    border-bottom: 1px dotted red;
+    background:yellow;
 }
 
 .article-post:last-of-type {
@@ -1495,6 +1495,9 @@ input[disabled], select[disabled], textarea[disabled], input[readonly], select[r
     padding: 10px 18px;
 }
 
+.article-content a:hover {
+  color: red;
+}
 .blog-full .article-post {
     text-align: center;
     margin: 0;
@@ -1505,12 +1508,15 @@ input[disabled], select[disabled], textarea[disabled], input[readonly], select[r
 .article-post .article-image,
 .article-post .article-embed,
 .article-post .fluid-width-video-wrapper {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .article-title {
+    font-family: "omnes-pro";
     font-weight: 300;
-    margin: 0 0 20px 0;
+    margin: 0 0 15px -15px;
+    font-size: 22px;
+    line-height: 26px;
 }
 
 .article-title a {
@@ -1519,11 +1525,19 @@ input[disabled], select[disabled], textarea[disabled], input[readonly], select[r
 }
 
 
+.article-left, .article-right {
+  display: inline;
+  float: left;
+}
+
+
+
 /* Article Navigation */
 
 .article-nav .article-post-date {
     font-style: italic;
 }
+
 
 /* Smaller than desktop 1200 (devices and browsers) */
 @media only screen and (max-width: 1200px) {
@@ -1551,6 +1565,187 @@ input[disabled], select[disabled], textarea[disabled], input[readonly], select[r
         margin: 0 0 30px 0;
     }
 }
+
+
+/********************************/
+/*      PAGINATION             */
+/******************************/ 
+
+.pagination {
+    display: block;
+    text-align: center;
+    color: #111;
+    padding-top: 50px;
+}
+
+.pagination a {
+    display: inline-block;
+    color: #111;
+}
+
+.pagination .paging-link {
+    font-size: 12px;
+    font-family: "omnes-pro", sans-serif;
+    font-weight: 400;
+    text-transform: lowercase;
+    margin: 0 20px 0 0;
+}
+
+.pagination .paging-link:before {
+    font-family: 'custom-icons';
+    content: "\e804";
+    speak: none;
+    font-size: 11px;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: normal;
+    font-style: normal;
+    margin: 0 10px 0 0;
+    position: relative;
+    top: 1px;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.pagination a.paging-link:hover {
+    color: #bbb;
+    background: none;
+}
+
+.pagination .next {
+    margin: 0 0 0 20px;
+}
+
+.pagination .next:before {
+    content: "\e805";
+    float: right;
+    margin: 0 0 0 10px;
+    top: 4px;
+}
+
+.pagination ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+.pagination ul li {
+    display: inline-block;
+}
+
+.pagination ul li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+
+    margin: 0 5px;
+    padding: 9px 0 11px 1px;
+
+    background: white;
+    border: 1px solid #111;
+    border-radius: 100%;
+
+    font-family: 'omnes-pro', sans-serif;
+    text-align: center;
+    color: #111;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.pagination ul .current,
+.pagination ul li a:hover {
+    background: #111;
+    color: white;
+    border-color: #111;
+}
+
+.blog-full .pagination {
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+/********************************/
+/*      SIDEBAR             */
+/******************************/
+
+/* Sidebar widgets*/
+
+.sidebar { 
+  display: inline-block;
+  float: left;
+/*  float: left;*/
+}
+
+.sidebar .widget {
+    margin-bottom: 30px;
+  /*  display: block;
+    position: relative;*/
+}
+
+.sidebar .widget-title {
+    font-family: 'omnes-pro', sans-serif;
+    font-size: 12px;
+    /*text-transform: uppercase;*/
+    font-weight: 500;
+    color: #fff;
+    padding: 6px;
+    margin: 0 0 15px 0;
+    background: #111;
+}
+
+/* Latest posts */
+.latest-posts,
+.categories {
+    line-height: normal;
+}
+
+.latest-posts ul,
+.categories ul,
+.latest-comments ul,
+.links ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.latest-posts ul li,
+.categories ul li,
+.latest-comments ul li {
+    margin-bottom: 15px;
+}
+
+.latest-posts em {
+    font-size: 12px;
+    color: #111;
+}
+
+.latest-posts a {
+    font-weight: 700;
+    color: #555;
+    border: none;
+}
+
+.latest-posts a {
+    font-weight: 700;
+    color: #555;
+    border: none;
+}
+
+.latest-posts a:hover,
+.categories a:hover {
+    color: white;
+}
+
+/* Categories */
+.categories a {
+    color: #555;
+    border: none;
+}
+
+
 
 
 
